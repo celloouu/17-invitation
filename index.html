@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estefania Celline · Sweet Seventeen</title>
+<meta name="theme-color" content="#4a1526">
+<link rel="preload" href="assets/cover-frame.jpg" as="image">
+<link rel="stylesheet" href="style.css?v=11">
+</head>
+<body class="locked">
+
+<!-- ═══════════════════════════════════════════════════════════
+     COVER
+     ═══════════════════════════════════════════════════════════ -->
+<header id="cover">
+  <div class="oval">
+    <div class="nm-cover" data-t="name-cover">
+      <span>Estefania</span>
+      <span>Celline</span>
+    </div>
+    <div class="c17">17</div>
+    <div class="orn-cover"><span class="orn-diamond"></span></div>
+    <p class="sub-cover">Sweet Seventeenth Birthday</p>
+  </div>
+
+  <div class="enter">
+    <p class="guest-line">Dear <b id="guest">Guest</b></p>
+    <button class="btn btn-open" id="open">Open Invitation</button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN INVITATION CONTENT
+     ═══════════════════════════════════════════════════════════ -->
+<main>
+
+<!-- Birthday Girl Section -->
+<section id="girl">
+  <img class="flower flower-calla" src="assets/calla.jpg" alt="" width="180">
+  <div id="portrait" class="arch bg" data-img="portrait" role="img" aria-label="Estefania Celline"></div>
+  <h2 class="name-title" data-t="name">Estefania Celline</h2>
+  <span class="orn"></span>
+  <p class="intro-text" data-t="intro"></p>
+</section>
+
+<!-- Countdown Section -->
+<section id="count">
+  <img class="flower flower-vine" src="assets/vine.jpg" alt="" width="340" loading="lazy">
+  <h2>Until the party</h2>
+  <span class="orn"></span>
+  <div class="cd">
+    <div><b id="d">00</b><span>Days</span></div>
+    <div><b id="h">00</b><span>Hours</span></div>
+    <div><b id="m">00</b><span>Minutes</span></div>
+    <div><b id="s">00</b><span>Seconds</span></div>
+  </div>
+</section>
+
+<!-- Save The Date Section -->
+<section id="event">
+  <div class="frame-card">
+    <div class="frame">
+      <div class="frame-content">
+        <h2 class="frame-title">Save the date</h2>
+        <a id="cal" target="_blank" rel="noopener">
+          <div class="date-block">
+            <span id="dayL" class="date-day"></span>
+            <strong id="dateL" class="date-num"></strong>
+          </div>
+          <span id="timeL" class="date-time"></span>
+          <span class="cal-pill">Add to Calendar</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="dresscode">
+    <span class="dresscode-dot">◆</span> Dress code &middot; White <span class="dresscode-dot">◆</span>
+  </div>
+</section>
+
+<!-- Venue Section -->
+<section id="venue">
+  <h2>Venue</h2>
+  <span class="orn"></span>
+  <a id="mapl" class="venue-card" target="_blank" rel="noopener">
+    <span class="venue-icon">📍</span>
+    <strong data-t="venue"></strong>
+    <p class="venue-sub">Surabaya, East Java</p>
+    <span class="venue-pill">Open in Google Maps &nearr;</span>
+  </a>
+  <div class="map-frame">
+    <iframe id="map" loading="lazy" title="Venue map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<!-- Moments Gallery Section -->
+<section id="moments">
+  <h2>Moments</h2>
+  <span class="orn"></span>
+  <div id="gal"></div>
+</section>
+
+<!-- RSVP Section -->
+<section id="rsvp" class="dark">
+  <div class="rsvp-header">
+    <span class="rsvp-orn">✦</span>
+    <h2>Will you join us?</h2>
+    <p class="rsvp-note">Kindly confirm your presence by filling out the form below</p>
+  </div>
+  <form id="f">
+    <div class="field">
+      <input name="name" placeholder="Full name" required maxlength="80" autocomplete="name">
+    </div>
+    <div class="opts">
+      <label><input type="radio" name="attendance" value="Attending" checked><span>Attending</span></label>
+      <label><input type="radio" name="attendance" value="Not Attending"><span>Not attending</span></label>
+    </div>
+    <div class="field">
+      <textarea name="message" rows="4" maxlength="500" placeholder="Wishes and messages for the birthday girl"></textarea>
+    </div>
+    <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn btn-rsvp">Send RSVP</button>
+    <p id="msg" role="status"></p>
+  </form>
+</section>
+
+<!-- Birthday Wishes Section -->
+<section id="wishes">
+  <h2>Birthday wishes</h2>
+  <span class="orn"></span>
+  <div id="wl">
+    <div class="wishes-empty">Be the first to leave a wish.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <section id="end">
+    <img class="flower flower-peony" src="assets/peony.jpg" alt="" width="220" loading="lazy">
+    <p class="thank-you">Thank you for celebrating with me.</p>
+    <span class="orn orn-wide"></span>
+    <h2 class="name-title" data-t="name">Estefania Celline</h2>
+  </section>
+</footer>
+
+<canvas id="dust" aria-hidden="true"></canvas>
+<button id="music" aria-label="Toggle music">&#9835;</button>
+<audio id="au" loop preload="none"></audio>
+
+<script src="config.js?v=11"></script>
+<script src="app.js?v=11"></script>
+</body>
+</html>
